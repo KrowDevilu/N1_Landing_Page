@@ -1,12 +1,15 @@
 FEITO:
 -WireFrame-
-FALTA: 
-|LAYOUT
-Desktop
-Mobile
+--------------------------
+FALTA:
+HTML 50%;
 
-HTML 50%
+SPRITES/IMAGENS p/ o site;
+
+|LAYOUT
+Desktop;
+Mobile;
 
 |CSS
-Desktop
-Mobile
+Desktop;
+Mobile;
