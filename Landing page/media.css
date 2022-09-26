@@ -1,0 +1,123 @@
+@media (max-width:720px) {
+     body{
+        padding:0;
+        max-width: 720px;
+    }
+    .box{
+        display: grid;
+        grid-template: 400px 150px 7000px 110px/1fr;
+        grid-template-areas: 
+                            "header" 
+                            "fMenu" 
+                            "section"  
+                            "footer";
+        grid-gap: 40px;
+        max-width: 630px;
+    }
+    header{
+        max-width: 630px;
+        max-height: 100%;
+        padding: 2% 0 0 0;
+        border-radius: 20px 20px 0px 0px;
+        font-size: 100px;
+    }
+    .img_logo{
+        max-width: 256px;
+    }
+    .img_sobre, .img_gameplay, .img_autor{
+        justify-self: center;
+        padding: 0;
+        margin: 0;
+    }
+    .sobre{
+        max-width:620px;
+    }
+    .img_spriteSobre{
+        width:128px;
+    }
+    section{
+        grid-template: 600px 370px 560px 380px 600px 650px 430px 1800px 600px/1fr;
+    grid-template-areas: 
+                        "sobre" 
+                        "img_sobre" 
+                        "gameplay" 
+                        "img_gameplay" 
+                        "autor" 
+                        "img_autor"
+                        "recomenda"
+                        "faq"
+                        "comentarios";
+       text-align: center;
+        max-width: 630px;
+    }
+    section p {
+        font-size: 35px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .recomenda p{
+        font-size: 50px;
+    }
+    figcaption{
+        font-size: 25px;
+    }
+    .faq{
+        max-width: 620px;
+        text-align: left;
+    }
+    .autor{
+        max-width: 620px;
+    }
+    .comentarios{
+        max-width: 620px;
+        text-align: left;
+    }
+    .floating_menu{
+        grid-area: fMenu;
+        max-width: 630px;
+        max-height: 100%;
+        padding: 0 0px;
+        border-radius: 0px 0px 20px 20px;
+        background-color: rgba(35, 17, 36, 0.952);
+        
+    }
+    .floating_menu hr{
+        height: 10px;
+        visibility: hidden;
+    }
+    a{
+        font-size: 30px;
+    }
+    .menuBox{
+        max-width: 630px;
+        margin: 0px 0px;
+        display: grid;
+        grid-template: 1fr/ 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px 10px;
+        justify-content: center;
+        align-items: center;
+        text-justify: center;
+        padding: 0px 0px;
+        margin: 25px 50px;
+    }
+    .menuBox a{
+        left: 0%;
+    }
+    footer{
+        max-width: 630px;
+        padding: 0px 2%;
+    }
+    footer p {
+        font-size: 40px;
+    }
+    footer img{
+        width: 64px;
+    }
+    .print1, .print2,.img_autorReal{
+     width: 580px;
+    }
+}

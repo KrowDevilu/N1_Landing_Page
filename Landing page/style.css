@@ -1,0 +1,185 @@
+body{
+    background-image: url("img/background landpage.png");
+    background-repeat: no-repeat;
+    background-color: rgb(68, 0, 22);
+    background-position-x: center;
+    max-width: 1200;
+    width: auto;
+    padding: 0 5%;
+    color: white;
+}
+@font-face {
+    font-family: pixelFont;
+    src: url("font/Minecraft.ttf");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: veniceFont;
+    src: url("font/VeniceClassic.ttf");
+    font-weight: lighter;
+  }
+ 
+  h2{
+    font-family: pixelFont;
+    font-size: xx-large;
+    color:rgb(202, 62, 62)
+  }
+  h3{
+    color:rgb(195, 104, 255)
+  }
+.box{
+    display: grid;
+    grid-template: 50vh 50vh 260vh 10vh/3fr 1fr;
+    grid-template-areas: "header header" "section none" "section none" "footer footer";
+    grid-gap: 4vh;
+    
+}
+header{
+    background-color: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgb(15, 15, 15) 0%, rgba(27, 27, 27, 0.651) 100%);
+    grid-area: header;
+    border-radius:20px;
+    max-height: 70%;
+    height: 100%;
+    padding: 20px;
+}
+.img_logo{
+    max-height: 10%;
+    max-width: 10%;
+    height: 100%;
+    width: 100%
+}
+
+header p{
+    top: 0px;
+    font-family: veniceFont;
+    font-size:70px;
+    color:rgb(255, 166, 166);
+    font-weight: lighter;
+    grid-area: p;
+    margin: 20px 0;
+  }
+.headCon{
+    text-align: center;
+}
+section{
+    background-color: rgba(29, 29, 29, 0.836);
+    grid-area: section;
+    display: grid;
+    grid-template: 35vh 38vh 40vh 30vh 70vh 50vh/2fr 1fr;
+    grid-template-areas: 
+                        "sobre img_sobre" 
+                        "gameplay img_gameplay" 
+                        "autor img_autor"
+                        "recomenda recomenda"
+                        "faq faq"
+                        "comentarios comentarios";
+    gap: 5vh;
+    grid-gap: 2;
+    padding: 1% 2%;
+    border-radius: 20px;
+}
+.sobre{
+    grid-area: sobre;
+align-content: center;
+text-align: center;
+}
+.sobre p {
+    text-align: left;
+}
+.img_sobre{
+grid-area: img_sobre;
+justify-self: right;
+
+}
+.gameplay{
+    grid-area: gameplay;
+    text-align: center;
+}
+.gameplay p{
+    text-align: left;
+}
+.img_gameplay{
+    grid-area: img_gameplay;
+    justify-self: right;
+}
+.autor{
+    grid-area: autor;
+    text-align: center;
+    width: 160%;
+}
+.autor p {
+    text-align: left;
+}
+.img_autor{
+    grid-area: img_autor;
+    justify-self: right;
+}
+.recomenda{
+    text-align: center;
+    text-justify: center;
+    grid-area: recomenda;
+    font-size: xx-large;
+    color: rgb(253, 188, 188);
+}
+.recomenda .recAutor{
+    display: flex;
+    justify-content:end;
+    padding: 0 8%;
+}
+.faq{
+    grid-area: faq;
+}
+.faq h2{
+    text-align: center;
+}
+.faq p{
+    padding: 0 3%
+}
+.comentarios{
+    grid-area: comentarios;
+}
+.comentarios h3{
+    padding: 0 2%;
+    font-weight: lighter;
+    color: rgb(250, 220, 177);
+}
+.comentarios p{
+    padding: 0 4%;
+}
+
+.floating_menu{
+    background-color: rgba(29, 29, 29, 0.836);
+    padding: 10%;
+    text-align: center;
+    height: 100%;
+    max-height: 50%;
+    width: 100%;
+    max-width: 70%; 
+    position: sticky; 
+    top: 0px;
+    
+    border-radius: 20px;
+}
+.floating_menu a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 117, 140);
+    margin: 0 40px;
+}
+.floating_menu a:hover {
+    color:  rgb(182, 17, 44);
+  }
+footer{
+    background-color: rgba(29, 29, 29, 0.836);
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 2%;
+    border-radius: 50px;
+    color: rgb(0, 162, 255);
+}
+figure{
+    color:rgb(126, 255, 87);
+}

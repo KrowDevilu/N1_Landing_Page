@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultKat</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="media.css">
+    
+    <link rel="icon" href="img/cat ico.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script> // script para fazer smooth scroll (o do css não funcionou)
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+</head>
+<body>
+    <div class="box">
+        <header id="start">
+            <div class="headCon">
+            <img src="img/logo png.png" alt="Logo" class="img_logo" >
+            <p>Cultist Kat</p>
+            </div>
+        </header>
+
+
+        <nav class="floating_menu">
+            <div class="menuBox">
+                <a href="#nav_sobre" id="sobreNav">Sobre</a>
+                <hr id="hr1">
+                <a href="#nav_gameplay" id="gameplayNav">Gameplay</a>
+                <hr id="hr2">
+                <a href="#nav_autor" id="autorNav">Autor</a>
+                <hr id="hr3">
+                <a href="#nav_faq" id="faqNav">FAQ</a>
+                <hr id="hr4">
+                <a href="#nav_comentarios" id="comentariosNav">Comentários</a>
+            </div>
+            
+        </nav>
+
+
+        <section>
+            <article class="sobre" id="nav_sobre">
+                <h2>Sobre</h2>
+                    <img src="img/sprite kat gameplay 1 png.png" alt="sprite kat" class="img_spriteSobre">
+                <p>Neste jogo você é um gatinho cultista que precisa enfrentar um organização do mal de cachorros padres, você pode usar rituais armas e o jogo conta com diversos acessórios num mundo top-down de ação eletrizante.</p>
+            </article>
+
+            <figure class="img_sobre">
+                <img src="img/printone.png" alt="Print in game" class="print1">
+                <figcaption><em>Imagem ilustrativa apenas</em></figcaption>
+            </figure>
+            
+            <article class="gameplay" id="nav_gameplay">
+                <h2>Gameplay</h2>
+                <p>O sistema do jogo é em top-down o que siginifica que você olha todo o mundo de cima o jogo conta com armas fisicas, a distância e até mágicas. Álem de diversos acessórios para você poder deixar as coisas mais divertidas. Um sistema de geração de fases aleatórias para você nunca se cansar dos mapas incriveis do jogo.</p>
+            </article>
+
+            <figure class="img_gameplay">
+                <img src="img/printwo.png" alt="Print in game" class="print2">
+                <figcaption><em>Imagem ilustrativa apenas</em></figcaption>
+            </figure>
+
+            <article class="autor" id="nav_autor">
+                <h2>Autor</h2>
+                <p>Apenas um simples dev, gosto de jogos 2D, mundo aberto, sandbox.
+                    Tenho formação em produção de jogos em Havarb então espere grandes coisas de mim!
+                    Gosto de desenhar, dormir e programar. 
+                </p>
+                <p><font color="#ff4ec4">Lembre-se é sempre hora de morbar...</font></p>
+                <p><b>Ps:.</b> Eu também possuo doutorado em morcegos.</p>
+            </article>
+            
+            <figure class="img_autor">
+                <img src="img/imagem do autor real oficial.png" alt="foto (real) do autor" class="img_autorReal">
+                <figcaption><em>Foto (<b>real</b>) do autor</em></figcaption>
+            </figure>
+
+            <div class="recomenda">
+                <p>“...melhor jogo do submundo!!</p>
+                    <p>...Me senti extremamente representado!”</p>
+                    <p class="recAutor">- Diabo, Lucifer</p>
+            </div>
+
+            <article class="faq" id="nav_faq">
+                <h2>FAQ</h2>
+                <h3>Por que você deveria me dar seu dinheirinho suado?</h3>
+                <p>Bom, porque eu possuo muita experiência na área isso pode ser observado nos meus outros projetos como o ... e o ... e também tem aquele outro ..., sim depois de ver este extenso repertório você não vai ficar sem comprar né, então aguarde pequeno gafanhoto, pois logo logo este jogo estará (ou não) em todas as plataformas.</p>
+                <h3>Requisitos de sistema</h3>
+                <p>PC da xuxa em diante.</p>
+                <h3>Minhas inpirações</h3>
+                <p>Terraria: Um jogo sensacional 2D sandbox com um mundo gerado proceduralmente inspirado nele este jogo também conta com diversos acessórios, inimigos e armas para você passar horas e horas tentando pegar tudo.
+                    Enter the Gungeon: Um outro joguinho 2D extremamente divertido no estilo roguelike no qual este jogo também herda um pouco.
+                </p>
+                <h3>Como doar para a produção?</h3>
+                <p>Infelizmente ainda não da este jogo ainda possui muito para se pensar então até eu terminar de ajustar as idéias não farei nenhum crowdfunding.</p>
+            </article>
+
+            <article class="comentarios" id="nav_comentarios">
+                    <h2>Comentarios</h2>
+                    <h3><b><font color="#d2691e">Comentário real</font></b> há 15 minutos atrás</h3>
+                    <p>Qual engine você está usando para fazer este jogo?</p>
+                    <hr>
+                    <h3><b><font color="#d2691e">Comentário real</font></b> há 3 horas atrás</h3>
+                    <p>jogo legal cara</p>
+                    <hr>
+                    <h3><b><font color="#d2691e">Comentário real</font></b> há 2 dias atrás</h3>
+                    <p>meu pc é da polly eu vou consigo rodar?</p>
+                    <hr>
+                    <h3><b><font color="#d2691e">Comentário real</font></b> há 1 semana atrás</h3>
+                    <p>First.</p>
+            </article>
+        </section>
+     
+
+        <footer>
+                <p>Lucas Lima Souza 22023968</p>
+                <a href="#start"><img src="img/katheadfoot.png" alt="cara de gatinho" class="img_footer"></a>
+        </footer>
+    </div>
+    
+</body>
+</html>
